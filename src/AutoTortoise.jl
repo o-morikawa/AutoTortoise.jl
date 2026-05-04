@@ -38,7 +38,7 @@ const DEFAULT_IMAG_TOL = 1.0e-9
 Laurent-polynomial static metric function
 
 ```math
-f(r) = \sum_n a_n r^n,
+f(r) = sum_n a_n r^n,
 ```
 
 where the exponents `n` are integers and may be negative, zero, or positive.
