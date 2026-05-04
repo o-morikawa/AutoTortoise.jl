@@ -1,7 +1,6 @@
 module AutoTortoise
 
 using LinearAlgebra
-using Logging
 
 export MetricFunction,
        PhysicalInterval,
@@ -38,7 +37,7 @@ const DEFAULT_IMAG_TOL = 1.0e-9
 Laurent-polynomial static metric function
 
 ```math
-f(r) = sum_n a_n r^n,
+f(r) = \sum_n a_n r^n,
 ```
 
 where the exponents `n` are integers and may be negative, zero, or positive.
@@ -105,13 +104,13 @@ end
 Return `(P, m)`, where `P` is the ascending coefficient vector of
 
 ```math
-P(r) = r^m f(r), m = max(0, -n_{min}).
+P(r) = r^m f(r), \qquad m = \max(0, -n_{\min}).
 ```
 
 Thus
 
 ```math
-frac{1}{f(r)} = frac{r^m}{P(r)}.
+\frac{1}{f(r)} = \frac{r^m}{P(r)}.
 ```
 """
 function polynomialized_metric(f::MetricFunction)
@@ -482,7 +481,7 @@ end
 Construct the horizon-aware tortoise map
 
 ```math
-r_*(r)=int^r frac{dbar r}{f(bar r)}.
+r_*(r)=\int^r \frac{d\bar r}{f(\bar r)}.
 ```
 
 Conventions

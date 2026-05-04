@@ -1,11 +1,10 @@
 name = "AutoTortoise"
 uuid = "73a9f6d8-9e5a-4f5a-8f3a-7e4c4f3f4b26"
-authors = ["Okuto Morikawa"]
-version = "0.1.0"
+authors = ["AutoTortoise contributors"]
+version = "0.1.2"
 
 [deps]
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
-Logging = "56ddb016-857b-54e1-b83d-db4d58db5568f"
 
 [compat]
 julia = "1.10"

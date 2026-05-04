@@ -35,7 +35,9 @@ Near-extremal or exactly degenerate horizons are detected but not yet treated as
 ## Installation in a local checkout
 
 ```julia
-add https://github.com/o-morikawa/AutoTortoise.jl.git
+using Pkg
+Pkg.activate("/path/to/AutoTortoise.jl")
+Pkg.test()
 ```
 
 ## Basic usage
