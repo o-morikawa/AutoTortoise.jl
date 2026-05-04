@@ -36,8 +36,8 @@ const DEFAULT_IMAG_TOL = 1.0e-9
 
 Laurent-polynomial static metric function
 
-```math
-f(r) = \sum_n a_n r^n,
+```text
+f(r) = sum_n a_n r^n,
 ```
 
 where the exponents `n` are integers and may be negative, zero, or positive.
@@ -103,14 +103,14 @@ end
 
 Return `(P, m)`, where `P` is the ascending coefficient vector of
 
-```math
-P(r) = r^m f(r), \qquad m = \max(0, -n_{\min}).
+```text
+P(r) = r^m f(r),  m = max(0, -n_min).
 ```
 
 Thus
 
-```math
-\frac{1}{f(r)} = \frac{r^m}{P(r)}.
+```text
+1/f(r) = r^m/P(r).
 ```
 """
 function polynomialized_metric(f::MetricFunction)
@@ -480,8 +480,8 @@ end
 
 Construct the horizon-aware tortoise map
 
-```math
-r_*(r)=\int^r \frac{d\bar r}{f(\bar r)}.
+```text
+r_*(r) = integral^r d rbar / f(rbar).
 ```
 
 Conventions
