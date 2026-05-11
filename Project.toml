@@ -1,7 +1,7 @@
 name = "AutoTortoise"
 uuid = "73a9f6d8-9e5a-4f5a-8f3a-7e4c4f3f4b26"
 authors = ["Okuto Morikawa"]
-version = "0.1.0"
+version = "0.1.4"
 
 [deps]
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
