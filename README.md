@@ -18,7 +18,7 @@ for Laurent-polynomial metric functions.
 
 ## Current scope
 
-Version `0.1.0` supports:
+Version `0.1.4` supports:
 
 - Laurent-polynomial metric functions.
 - Conversion to a rational integral via `P(r)=r^m f(r)`.
@@ -35,16 +35,7 @@ Near-extremal or exactly degenerate horizons are detected but not yet treated as
 ## Installation
 
 ```julia
-using Pkg
-Pkg.add(url="https://github.com/o-morikawa/AutoTortoise.jl.git")
-```
-
-For development from a local checkout:
-
-```julia
-using Pkg
-Pkg.develop(path="/path/to/AutoTortoise.jl")
-Pkg.test("AutoTortoise")
+] add AutoTortoise
 ```
 
 ## Basic usage
